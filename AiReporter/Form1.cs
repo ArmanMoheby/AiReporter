@@ -13,7 +13,7 @@ namespace AiReporter
         private readonly HttpClient _httpClient;
         private readonly string _apiKey = "AIzaSyDdG3eewfkI9Drz2BJILfTHu9zdbNgOUSA"; // کلید API
         private WebView2 _webView;
-        string  generatedText;
+        string generatedText;
 
         public Form1()
         {
@@ -82,7 +82,7 @@ namespace AiReporter
                 }
 
                 var result = await response.Content.ReadAsStringAsync();
-                dynamic jsonResponse = JsonConvert.DeserializeObject(result); 
+                dynamic jsonResponse = JsonConvert.DeserializeObject(result);
 
                 generatedText = jsonResponse?.candidates?[0]?.content?.parts?[0]?.text?.ToString();
                 generatedText = generatedText.Replace("```", "");
@@ -115,7 +115,17 @@ namespace AiReporter
 
         }
 
-      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var frm = new helpfrm();
+            frm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frm = new about();
+            frm.ShowDialog();
+        }
     }
 
     public static class ControlExtensions

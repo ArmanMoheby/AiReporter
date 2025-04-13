@@ -92,7 +92,7 @@
             button1.TabIndex = 1;
             button1.Text = "درباره";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += btn1_Click;
+            button1.Click += button1_Click;
             // 
             // panelHtmlPreview
             // 
@@ -109,7 +109,7 @@
             button3.TabIndex = 1;
             button3.Text = "راهنما";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += btn1_Click;
+            button3.Click += button3_Click;
             // 
             // label4
             // 
@@ -126,6 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(983, 524);
             Controls.Add(panelHtmlPreview);
             Controls.Add(label4);
@@ -136,6 +137,7 @@
             Controls.Add(button1);
             Controls.Add(btn1);
             Controls.Add(txt1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             RightToLeft = RightToLeft.Yes;
             Text = "سیستم هوش مصنوعی پتروسازه مبین  (طرح آزمایشی)";
