@@ -46,7 +46,6 @@
             txt1.Name = "txt1";
             txt1.Size = new Size(330, 431);
             txt1.TabIndex = 0;
-            txt1.TextAlign = HorizontalAlignment.Right;
             // 
             // btn1
             // 
